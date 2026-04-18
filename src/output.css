@@ -10,6 +10,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-light: 300;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
@@ -195,11 +197,20 @@
   .h-\[0px\] {
     height: 0px;
   }
+  .h-\[00px\] {
+    height: 00px;
+  }
   .h-\[40px\] {
     height: 40px;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
   .h-\[340px\] {
     height: 340px;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[490px\] {
     height: 490px;
@@ -216,11 +227,20 @@
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-\[40px\] {
     width: 40px;
   }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[90\%px\] {
+    width: 90%px;
+  }
+  .w-\[90\] {
+    width: 90;
   }
   .w-\[99\%\] {
     width: 99%;
@@ -236,6 +256,12 @@
   }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[300px\] {
+    width: 300px;
+  }
+  .w-\[px\] {
+    width: px;
   }
   .max-w-\[1250px\] {
     max-width: 1250px;
@@ -267,8 +293,14 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-\[6px\] {
     gap: 6px;
+  }
+  .gap-\[10px\] {
+    gap: 10px;
   }
   .gap-\[20px\] {
     gap: 20px;
@@ -293,15 +325,25 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[wh\] {
+    border-color: wh;
   }
   .border-\[whi\] {
     border-color: whi;
   }
   .border-\[white\] {
     border-color: white;
+  }
+  .border-\[whote\] {
+    border-color: whote;
   }
   .bg-\[\#23A6F0\] {
     background-color: #23A6F0;
@@ -311,6 +353,9 @@
   }
   .bg-\[\#252b42\] {
     background-color: #252b42;
+  }
+  .bg-\[\#00800000\] {
+    background-color: #00800000;
   }
   .bg-\[\#ffffff\] {
     background-color: #ffffff;
@@ -324,6 +369,12 @@
   .bg-\[blue\] {
     background-color: blue;
   }
+  .bg-\[green\] {
+    background-color: green;
+  }
+  .bg-\[grreb\] {
+    background-color: grreb;
+  }
   .bg-\[u\] {
     background-color: u;
   }
@@ -335,6 +386,9 @@
   }
   .bg-\[white\] {
     background-color: white;
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-\[url\(\'\'\)\] {
     background-image: url('');
@@ -357,6 +411,9 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .px-\[20px\] {
+    padding-inline: 20px;
+  }
   .px-\[30px\] {
     padding-inline: 30px;
   }
@@ -372,6 +429,9 @@
   .py-\[17px\] {
     padding-block: 17px;
   }
+  .py-\[30px\] {
+    padding-block: 30px;
+  }
   .py-\[60px\] {
     padding-block: 60px;
   }
@@ -384,6 +444,9 @@
   .pt-\[60px\] {
     padding-top: 60px;
   }
+  .pt-\[90px\] {
+    padding-top: 90px;
+  }
   .pt-\[100px\] {
     padding-top: 100px;
   }
@@ -395,6 +458,13 @@
   }
   .text-justify {
     text-align: justify;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-\[2px\] {
+    font-size: 2px;
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -429,6 +499,9 @@
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
+  }
+  .text-\[\#837f7f\] {
+    color: #837f7f;
   }
   .text-\[\#151515\] {
     color: #151515;
@@ -517,6 +590,11 @@
       height: 620px;
     }
   }
+  .lg\:w-\[80\%\] {
+    @media (width >= 64rem) {
+      width: 80%;
+    }
+  }
   .lg\:w-\[200px\] {
     @media (width >= 64rem) {
       width: 200px;
@@ -527,9 +605,24 @@
       width: 270px;
     }
   }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
+    }
+  }
   .lg\:w-\[500px\] {
     @media (width >= 64rem) {
       width: 500px;
+    }
+  }
+  .lg\:w-\[600px\] {
+    @media (width >= 64rem) {
+      width: 600px;
     }
   }
   .lg\:flex-row {
